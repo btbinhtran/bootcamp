@@ -1,6 +1,6 @@
-<template name="navbar">
+<template name="navbarStaticTop">
   <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -37,11 +37,11 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">
-              <a href="#">Default</a>
-            </li>
             <li>
-              <a href="{{pathFor 'navbarStaticTop'}}">Static top</a>
+              <a href="{{pathFor 'navbar'}}">Default</a>
+            </li>
+            <li class="active">
+              <a href="#">Static top</a>
             </li>
             <li>
               <a href="#">Fixed top</a>
