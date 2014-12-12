@@ -1,6 +1,6 @@
-<template name="navbar">
+<template name="navbarFixedTop">
   <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -37,14 +37,14 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">
+            <li>
               <a href="#">Default</a>
             </li>
             <li>
               <a href="{{pathFor 'navbarStaticTop'}}">Static top</a>
             </li>
-            <li>
-              <a href="{{pathFor 'navbarFixedTop'}}">Fixed top</a>
+            <li class="active">
+              <a href="#">Fixed top</a>
             </li>
           </ul>
         </div>
@@ -54,6 +54,9 @@
     <div class="jumbotron">
       <h1>Navbar example</h1>
       <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+
+      <p>To see the difference between static and fixed top navbars, just scroll.</p>
+
       <p>
         <a class="btn btn-lg btn-primary" href="#">View navbar docs &raquo;</a>
       </p>
